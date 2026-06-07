@@ -204,8 +204,44 @@
     @media (max-width: 768px) { .footer-inner { flex-direction: column; text-align: center; } }
 
     /* ─── WHATSAPP ─── */
-.whatsapp-btn { position: width; bottom: 1.5rem; left: 1.5rem; z-index: 50; width: 56px; height: 56px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px hsla(142, 71%, 45%, 0.3); transition: transform 0.2s; animation: pulse-glow 2s infinite; } .whatsapp-btn:hover { transform: scale(1.1); } .whatsapp-btn svg { width: 28px; height: 28px; fill: #fff; } @keyframes pulse-glow { 0%, 100% { box-shadow: 0 4px 16px hsla(142, 71%, 45%, 0.3); } 50% { box-shadow: 0 4px 24px hsla(142, 71%, 45%, 0.6); } }
-    /* SVG icons inline */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 50;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px hsla(142, 71%, 45%, 0.3);
+    transition: transform 0.2s;
+    animation: pulse-glow 2s infinite;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-btn svg {
+    width: 28px;
+    height: 28px;
+    fill: #fff;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 4px 16px hsla(142, 71%, 45%, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 24px hsla(142, 71%, 45%, 0.6);
+    }
+}
+      
+      
+      /* SVG icons inline */
     .icon { width: 20px; height: 20px; display: inline-block; vertical-align: middle; }
   </style>
 </head>
